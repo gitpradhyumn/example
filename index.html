@@ -1,34 +1,80 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> EXAMPLE </title>
+<title>Example</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-.center-div {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  text-align: center;   /* This centers text inside */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  /* Professional Dark Gradient */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Content */
+.container {
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 10px 0;
+  opacity: 0.85;
+}
+
+/* Professional Button */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 30px;
+  background: white;
+  color: #203a43;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 </style>
 
 </head>
+
 <body>
 
-<div class="center-div">
-  <p>THIS IS AN EXAMPLE SITE</p>
+<div class="container">
+  <h1>Example Website</h1>
+  <p>This is a professional modern webpage.</p>
 
-  <br>
-  <a href="about:blank">OUR WEBSITE</a>
-  <br>
+  <a href="about:blank" class="btn">Visit Our Website</a>
 
-  <p>
-    <a href="about:blank">
-      <button type="button">OUR WEBSITE</button>
-    </a>
+  <p style="margin-top:30px; font-size:14px;">
+    Author: Pradhyumn Bhaskara
   </p>
-
-  <p>AUTHOR : PRADHYUMN BHASKARA</p>
 </div>
 
 </body>
